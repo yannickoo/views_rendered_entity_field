@@ -1,0 +1,14 @@
+{
+  "name": "drupal/views_rendered_entity_field",
+  "type": "drupal-module",
+  "description": "Provides a views field which renders your entity.",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://github.com/yannickoo/views_rendered_entity_field",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://github.com/yannickoo/views_rendered_entity_field/issues",
+    "source": "https://github.com/yannickoo/views_rendered_entity_field/tree/8.x-1.x"
+  },
+  "require": { }
+}
