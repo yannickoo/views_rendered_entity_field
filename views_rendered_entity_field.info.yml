@@ -1,0 +1,5 @@
+name: Views Rendered Entity Field
+type: module
+description: Provides a views field which renders your entity.
+core: 8.x
+package: Views
