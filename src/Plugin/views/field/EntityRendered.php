@@ -40,17 +40,7 @@ use Drupal\views\ResultRow;
    public function buildOptionsForm(&$form, FormStateInterface $form_state) {
      parent::buildOptionsForm($form, $form_state);
 
-     $view_modes = [];
-     $definitions = \Drupal::entityManager()->getDefinitions();
-
-     // @TODO: Figure out how to get entity type.
-
-     // Build entity types and view modes options.
-     foreach ($definitions as $entity_type => $definition) {
-       if ($definition->getGroup() == 'content') {
-         $view_modes[$entity_type] = \Drupal::entityManager()->getViewModeOptions($entity_type);
-       }
-     }
+     $view_modes = \Drupal::entityManager()->getViewModeOptions($this->definition['entity_type']);
 
      $form['view_mode'] = array(
        '#type' => 'select',
