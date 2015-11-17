@@ -47,7 +47,7 @@ use Drupal\views\ResultRow;
        '#title' => $this->t('View mode'),
        '#required' => TRUE,
        '#options' => $view_modes,
-       '#default_value' => isset($this->configuration['view_mode']) ? $this->configuration['view_mode'] : '',
+       '#default_value' => isset($this->options['view_mode']) ? $this->options['view_mode'] : '',
      );
    }
 
